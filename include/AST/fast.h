@@ -22,7 +22,7 @@
 #include <stdint.h>
 
 typedef uint32_t fast_stat;
-typedef void* info_t;
+typedef void* fast_info;
 typedef struct Fast_element fast_element;
 
 #define FAST_FANCTION 0x000000
@@ -31,7 +31,7 @@ typedef struct Fast_element fast_element;
 
 struct Fast_element{
 	fast_stat type;
-	info_t info;
+	fast_info info;
 	fast_element next;
 };
 
